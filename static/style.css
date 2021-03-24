@@ -1,0 +1,10 @@
+
+body{
+    background-color: grey;
+}
+
+p {
+color: rgb(53, 37, 126);
+text-transform: uppercase;
+text-align: center;
+}

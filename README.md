@@ -2,7 +2,7 @@
 
 Binôme Moreau victor et Vigan Corentin
 
-### faire fonctionner le site###
+faire fonctionner le site
 
 !! important d'ajouter le dossier "fonts" du site font awesome, a la racine du projet ( https://use.fontawesome.com/releases/v5.15.3/fontawesome-free-5.15.3-web.zip)
 

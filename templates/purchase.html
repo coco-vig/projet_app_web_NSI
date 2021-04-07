@@ -14,6 +14,9 @@
 	<div class="container">
 		<div class="user signinBx">
 			<div class="formBx">
+				<p><table border = 1 >
+					<tr><td>le prix /kg pour la variété {{variété}}</td><td>{{prix[v]}} €</td></tr>
+					<tr> <td> {{kilo_pommes}} x {{prix[v]}}</td><td></td></tr></p>
 				<form action = "/prix_pommes" method = "POST">
 					<select name ="variété_pomme">
 						<option>Raiguettes</option>
@@ -31,12 +34,6 @@
 					<p><input type = "submit" value = "calculer !" /></p>
 			</div>
 		</div>
-			
-		<table border= 1 >
-			<tr><td>le prix /kg pour la variété {{variété}}</td><td>{{prix[v]}} €</td></tr>
-			<tr> <td> {{kilo_pommes}} x {{prix[v]}}</td><td></td></tr>
-<script src="">
-
 </script>
 
 </body>

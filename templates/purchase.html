@@ -1,0 +1,42 @@
+<link href="../static/purchase.css" rel="stylesheet" type="text/css"> 
+
+
+<head>
+<meta charset="utf-8">
+<title>Aplles shop</title>
+<a href="/"><button>revenir au menu</button></a>
+</head>
+
+<body>
+    
+<p> <i>acheter des pommes !</i> </p>
+
+	<div class="container">
+		<div class="user signinBx">
+			<div class="formBx">
+				<form action = "/prix_pommes" method = "POST">
+					<select name ="variété_pomme">
+						<option>Raiguettes</option>
+						<option>Ariane</option>
+						<option>Gala</option>
+						<option>Reinette Ananas</option>
+						<option>Reinette Newtown</option>
+						<option>Patte de loup</option>
+						<option>Pomme Clochard</option>
+						<option>Pomme Dieu</option>
+						<option>Pomme d'enfer</option>
+						<option>Apple watch</option>
+					</select>
+					<p>kilo de pommes <input type = "number" name = "kilo" min="1" max="1000" /></p>
+					<p><input type = "submit" value = "calculer !" /></p>
+			</div>
+		</div>
+			
+		<table border= 1 >
+			<tr><td>le prix /kg pour la variété {{variété}}</td><td>{{prix[v]}} €</td></tr>
+			<tr> <td> {{kilo_pommes}} x {{prix[v]}}</td><td></td></tr>
+<script src="">
+
+</script>
+
+</body>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+        <title>page de connexion</title>
+        <link rel="stylesheet" type="text/css" href="../static/login.css">
+        <i>revenir au menu sans se connecter <a href ="http://localhost:5000/"> <button> ici </button></a></i>
+    </head>
+    <body>
+        <section>
+             <!-- partie inscription // le bouton submit redirige vers la page /inscription-->
+            <div class="container">
+                <div class="user signinBx">
+                    <div class="imgBx"><img src="../static/img/login.png"></div>
+                    <div class="formBx">
+                        <form action = "/redirection" method = "POST">
+                            <h2>connexion</h2>
+                            <p>Nom <input type = "text" name = "name" /></p>
+                            <p>mot de passe<input type = "password" name = "pin" /></p>
+                            <p><input type = "submit" value = "soumetre" /></p>
+                            <p class="signup"><a href="#" onclick="toggleForm();">je veux crée un compte !</a></p>
+                        </form>
+                    </div>
+                </div>
+                <!-- partie inscription // le bouton submit redirige vers la page /inscription-->
+                <div class="user signupBx">
+                    <div class="formBx">
+                        <form action = "/inscription" method = "POST">
+                            <h3>information de l'utilisateur</h3>
+                            <p>Nom<input type = "text" name = "name" /></br></p>
+                            <p>mot de passe<input type = "password" name = "pin" /><br></p>
+                            <input type = "submit" value = "soumetre" /><br>
+                            <p class="signup"><strong> </strong><a href="#" onclick="toggleForm();">se connecter</a></p>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="../static/img/sub_apple.png"></div>
+                </div>
+            </div>
+        </section> 
+        <script>
+            alert("le Login ne fonctionne pas encore vous ne pouvez que vous inscrire");
+            function toggleForm(){
+                section = document.querySelector('section');
+                container = document.querySelector('.container');
+                container.classList.toggle('active');
+                section.classList.toggle('active');
+            }
+        </script>
+     </body>
+</html>

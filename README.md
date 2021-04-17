@@ -28,8 +28,8 @@ n’est pas finalisée, et la partie achats de pommes qui ne fonctionne pas tota
 
 Difficulté 
 
-Outre notre difficulté de départ à lancé notre application, nous avons fait face à d’autre difficulté Notamment : 
+Outre nos difficulté de départ à lancé notre application, nous avons fait face à d’autre difficulté Notamment : 
 
-- Récupérer une valeur précise dans une base de données tout en précisant la destination suite à un « submit request » en html. (importer prix variété pomme spécifique)
-- Login du site
-- Intégrer un graphique en utilisant des valeurs dans un fichier csv.
+- calculer le prix des pomme avec un kilo spécifier
+- la partie Login du site le eregister lui fonctionne
+- Intégrer un graphique en utilisant des valeurs depuis un fichier csv.

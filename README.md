@@ -4,17 +4,17 @@ Binôme Moreau victor et Vigan Corentin
 
 faire fonctionner le site
 
-!! important d'ajouter le dossier "fonts" du site font awesome, a la racine du projet ( https://use.fontawesome.com/releases/v5.15.3/fontawesome-free-5.15.3-web.zip)
+!! important d'ajouter le dossier (renommer au préalable"fonts") du site font awesome, à la racine du projet ( https://use.fontawesome.com/releases/v5.15.3/fontawesome-free-5.15.3-web.zip)
 
 Idée principale 
 
-L’idée principale pour notre site internet aura été un site de vente pour le coté général, 
-nous ne savions pas trop ce que le site allais vendre. En voulant s’inspirer du site d’Apple, 
+L’idée principale pour notre site internet a été un site de vente.
+nous ne savions pas trop ce que le site alait vendre. En voulant s’inspirer du site d’Apple, 
 nous avons fait un jeu de mots avec le nom de la marque et nous en avons fait un site de vente de pommes.
 
 
 Les taches et cahier de charges : 
-Quant à la répartition des tâches au sein de notre binôme, Corentin à réaliser la partie login, 
+Quand à la répartition des tâches au sein de notre binôme, Corentin à réaliser la partie login, 
 register du site, ainsi que les partie CSS.
 
 

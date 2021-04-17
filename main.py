@@ -77,39 +77,13 @@ def prix_pomme():
         kilo_pommes = request.form["kilo"]
         print (variété)
         with sql.connect("db/list_pommes.db") as con:
-#            try:
             cur = con.cursor()
-            prix = tuple(cur.execute("SELECT prix FROM pommes "))
-            #prix =tuple(cur.execute("SELECT * FROM pommes WHERE variété='var_4'")) c'étais le projet initial mais cela ne fonctionne pas !
-            print(prix)
-            print(variété)
-            print(kilo_pommes)
-            # ceci est un systeme D utiliser pour importer spécifiquement les bonne valeur "prix des variété de pommes dans la base de donée" je n'arivais pas sinon X( .
-            if variété == ("Raiguettes"):
-                v = 0
-            if variété == ("Ariane"):
-                v = 1
-            if variété == ("Gala"):
-                v = 2
-            if variété == ("Reinette Ananas"):
-                v = 3
-            if variété == ("Reinette Newtown"):
-                v = 4
-            if variété == ("Patte de loup"):
-                v = 5
-            if variété == ("Pomme Clochard"):
-                v = 6
-            if variété == ("Pomme Dieu"):
-                v = 7
-            if variété == ("Pomme d'enfer"):
-                v = 8
-            if variété == ("Apple watch"):
-                v = 9
+            cur.execute('Select DISTINCT prix from pommes where variété = ? ', (variété,))
+            prix = cur.fetchall()
+            print (variété, prix  , kilo_pommes)
 
+            return render_template ("purchase.html", prix = prix, variété = variété, kilo_pommes = kilo_pommes )
 
-            return render_template ("purchase.html", prix = prix, v = v, variété = variété, kilo_pommes = kilo_pommes )
-"""            except:
-                return redirect(url_for('home'))"""
 
 
 

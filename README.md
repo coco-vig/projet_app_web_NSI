@@ -1,4 +1,4 @@
-# projet_app_web_NSI
+# projet_app_web_NSI Victor et correntin
 
 -Binôme Moreau victor et Vigan Corentin-
 

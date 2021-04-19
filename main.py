@@ -3,7 +3,7 @@
 from flask import Flask,g, render_template, request, url_for, redirect
 #from flask_sqlalchemy import SQLAlchemy
 import sqlite3 as sql
-
+import functools
 
 
 app = Flask(__name__)
@@ -75,14 +75,20 @@ def  inscription():
 def prix_pomme():
         variété = request.form["variété_pomme"]
         kilo_pommes = request.form["kilo"]
-        print (variété)
+        kilo_pommes = (int(kilo_pommes))
+# la ligne du dessu convertis kilo pomme qui etais un request form en str et le convertis en int #
         with sql.connect("db/list_pommes.db") as con:
             cur = con.cursor()
             cur.execute('Select DISTINCT prix from pommes where variété = ? ', (variété,))
             prix = cur.fetchall()
-            print (variété, prix  , kilo_pommes)
 
-            return render_template ("purchase.html", prix = prix, variété = variété, kilo_pommes = kilo_pommes )
+            prix = functools.reduce(lambda sub, ele: sub * 10 + ele, prix)
+  
+            total = functools.reduce(lambda sub, ele: sub * 10 + ele, prix)
+            total = total * kilo_pommes
+
+
+            return render_template ("purchase.html", prix = prix, variété = variété, kilo_pommes = kilo_pommes,total =total, )
 
 
 

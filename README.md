@@ -2,9 +2,12 @@
 
 -Binôme Moreau victor et Vigan Corentin-
 
-faire fonctionner le site
+-faire fonctionner le site
 
-!! important d'ajouter le dossier (renommer au préalable"fonts") du site font awesome, à la racine du projet ( https://use.fontawesome.com/releases/v5.15.3/fontawesome-free-5.15.3-web.zip)
+-!! important d'ajouter le dossier (renommer au préalable"fonts") du site font awesome, à la racine du projet ( https://use.fontawesome.com/releases/v5.15.3/fontawesome-free-5.15.3-web.zip)
+
+-Par la suite il faut lancer le fichier { main.py() }. 
+
 
 -Idée principale-
 

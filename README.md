@@ -20,9 +20,9 @@ Sur les deux premières semaines, nous avions eu beaucoup de problèmes pour lan
 Dans notre cahier des charges, nous avions mis qu’il devait y avoir minimum une base de données, plus d’une page html, une partie achats et une partie login.
 Par manque de temps nous avons seulement réussi certain de nos objectifs. La partie "login", notamment n’est pas finalisée, (la partie inscription fonctionne elle).
 
--Difficulté
+Difficulté
 
--Outre nos difficultés de départ a lancé notre application, nous avons fait face à d’autre difficulté Notamment:
+Outre nos difficultés de départ a lancé notre application, nous avons fait face à d’autre difficulté Notamment:
 
 -Calculer le prix des pommes avec un kilo spécifier
 -La partie Login du site le eregister lui fonctionne

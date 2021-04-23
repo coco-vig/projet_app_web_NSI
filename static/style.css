@@ -42,7 +42,7 @@ body h1{
     text-align: center;
     text-decoration: underline;
     text-decoration-color: rgb(179, 21, 21);
-    color: rgb(0, 133, 221);
+    color: rgb(255, 255, 255);
 }
 #Mentions {
     background-color: wheat;
@@ -50,7 +50,9 @@ body h1{
     bottom : 0px;
 }
 
-
+span {
+    background-color: #000000;
+  }
 
 #user_state {color: rgb(255, 255, 255);
 }

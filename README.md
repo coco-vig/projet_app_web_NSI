@@ -22,7 +22,8 @@ Par manque de temps nous avons seulement réussi certain de nos objectifs. La pa
 
 -Difficulté
 
--Outre nos difficultés de départ a lancé notre application, nous avons fait face à d’autre difficulté Notamment :
+-Outre nos difficultés de départ a lancé notre application, nous avons fait face à d’autre difficulté Notamment:
+
 -Calculer le prix des pommes avec un kilo spécifier
 -La partie Login du site le eregister lui fonctionne
 -Intégrer un graphique en utilisant des valeurs depuis un fichier csv.

@@ -10,13 +10,14 @@ app = Flask(__name__)
 
 
 
-###### lien vers les differentes pages #######"debut"
+###### lien vers les differentes pages #######
 @app.route('/')
 def home():
     statut = str('déconecter')
 
     return render_template('index.html',statut = statut,)
 
+## page de connection qui s'affiche suite a une inscription ###
 @app.route('/connecter')
 def connecter():
     statut = str('connecter')
@@ -37,18 +38,18 @@ def aller_page_achats():
     variété = str("#")
     prix = list([0,0])
     v = 0
-    ########################
-
 
     return render_template('purchase.html', prix = prix, v = v, variété = variété)
 
-#################################################" fin "
+#################################################
 
 ### partie connexion ### work in porgress
+
 @app.route("/redirection")
 def redirection_login():
     return render_template("/redirection_apres_login.html")
-### partie connexion ### work in porgress
+### partie connexion ### work in porgress ###
+
 
 ## partie inscription  debut ##
 
@@ -69,14 +70,15 @@ def  inscription():
 
 ######  partie incrition fin ####################
 
-###### achats pommes #########
+###### page achats de pommes #########
 
 @app.route('/prix_pommes', methods = ["POST", "GET"] )
 def prix_pomme():
         variété = request.form["variété_pomme"]
         kilo_pommes = request.form["kilo"]
         kilo_pommes = (int(kilo_pommes))
-# la ligne du dessu convertis kilo pomme qui etais un request form en str et le convertis en int #
+
+   # la ligne du au dessus convertis kilo pomme qui etais un request form en str et le convertis en int  pour pouvoir faire des calculs#
         with sql.connect("db/list_pommes.db") as con:
             cur = con.cursor()
             cur.execute('Select DISTINCT prix from pommes where variété = ? ', (variété,))

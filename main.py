@@ -62,7 +62,7 @@ def  inscription():
                  cur = con.cursor()
                  cur.execute("INSERT INTO student (name,pin) VALUES (?,?)",(nm,pin) )
                  con.commit()
-                 msg = (",vous avez bien été inscrit, retounez a la page du site")
+                 msg = (",Vous avez bien été inscrit \(ᵔᵕᵔ)/ ,retounez a la page du site")
              finally:
                  return render_template("redirection.html",msg = msg, nm = nm)
          con.close()

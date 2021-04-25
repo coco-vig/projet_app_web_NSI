@@ -1,1 +1,0 @@
-alert("desoler nous sommes actuellement hors service =(");
